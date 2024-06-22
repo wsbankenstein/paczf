@@ -1,0 +1,2 @@
+#!/bin/env sh
+paru -Slq | fzf --preview 'paru -Si {}' --layout=reverse --bind 'enter:execute(paru -S {})+accept'
